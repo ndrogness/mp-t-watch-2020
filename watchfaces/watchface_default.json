@@ -1,0 +1,37 @@
+{
+  "name": "watchface_default",
+  "png": {
+    "filename" : "/watchfaces/watchface_default.png"
+  },
+  "defaults": {
+    "fonts": {
+      "text_font_size": 18
+    }
+  },
+  "lv_objects": {
+    "digital_clock": {
+      "type": "label",
+      "layout": {
+        "include_hr": "Yes",
+        "include_min": "Yes",
+        "include_sec": "No",
+        "include_ampm": "Yes"
+      },
+      "styles": {
+        "text": {
+          "size": 48,
+          "color": "0x0000ff"
+        },
+        "background": {
+          "color": "0x00fffa"
+
+        }
+      },
+      "x_start": 10,
+      "y_start": 70,
+      "x_end": 230,
+      "y_end": 155
+    }
+  }
+
+}
