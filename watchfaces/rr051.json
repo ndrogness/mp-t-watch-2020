@@ -1,8 +1,8 @@
 {
-  "name": "watchface_default",
+  "name": "rr051",
   "wallpaper": {
     "type" : "png",
-    "filename" : "/watchfaces/watchface_default.png"
+    "filename" : "/watchfaces/rr051.png"
   },
   "refresh": {
     "interval_msec": 500
@@ -15,12 +15,12 @@
   "containers": [
     {
       "name": "A",
-      "x_start": 35,
-      "y_start": 7,
-      "x_end": 130,
-      "y_end": 32,
+      "x_start": 75,
+      "y_start": 20,
+      "x_end": 165,
+      "y_end": 34,
       "fit": "NONE",
-      "layout": "ROW_MID",
+      "layout": "CENTER",
       "styles": {
         "transparent": "yes",
         "spacing": {
@@ -31,12 +31,12 @@
     },
     {
       "name": "B",
-      "x_start": 20,
-      "y_start": 35,
-      "x_end": 130,
-      "y_end": 60,
+      "x_start": 45,
+      "y_start": 40,
+      "x_end": 100,
+      "y_end": 85,
       "fit": "NONE",
-      "layout": "ROW_MID",
+      "layout": "CENTER",
       "styles": {
         "transparent": "yes",
         "spacing": {
@@ -47,10 +47,10 @@
     },
     {
       "name": "C",
-      "x_start": 135,
-      "y_start": 7,
-      "x_end": 200,
-      "y_end": 60,
+      "x_start": 105,
+      "y_start": 45,
+      "x_end": 135,
+      "y_end": 85,
       "fit": "NONE",
       "layout": "CENTER",
       "styles": {
@@ -63,12 +63,12 @@
     },
     {
       "name": "D",
-      "x_start": 10,
-      "y_start": 70,
-      "x_end": 230,
-      "y_end": 155,
+      "x_start": 140,
+      "y_start": 40,
+      "x_end": 200,
+      "y_end": 85,
       "fit": "NONE",
-      "layout": "ROW_MID",
+      "layout": "CENTER",
       "styles": {
         "transparent": "yes",
         "spacing": {
@@ -79,12 +79,12 @@
     },
     {
       "name": "E",
-      "x_start": 15,
-      "y_start": 165,
-      "x_end": 85,
-      "y_end": 205,
+      "x_start": 40,
+      "y_start": 90,
+      "x_end": 200,
+      "y_end": 135,
       "fit": "NONE",
-      "layout": "ROW_MID",
+      "layout": "CENTER",
       "styles": {
         "transparent": "yes",
         "spacing": {
@@ -95,10 +95,10 @@
     },
     {
       "name": "F",
-      "x_start": 100,
-      "y_start": 165,
-      "x_end": 140,
-      "y_end": 205,
+      "x_start": 45,
+      "y_start": 155,
+      "x_end": 100,
+      "y_end": 200,
       "fit": "NONE",
       "layout": "CENTER",
       "styles": {
@@ -111,12 +111,28 @@
     },
     {
       "name": "G",
-      "x_start": 160,
-      "y_start": 165,
-      "x_end": 210,
-      "y_end": 215,
+      "x_start": 105,
+      "y_start": 150,
+      "x_end": 135,
+      "y_end": 190,
       "fit": "NONE",
-      "layout": "ROW_MID",
+      "layout": "CENTER",
+      "styles": {
+        "transparent": "yes",
+        "spacing": {
+          "margins": 1,
+          "padding": 1
+        }
+      }
+    },
+    {
+      "name": "H",
+      "x_start": 140,
+      "y_start": 155,
+      "x_end": 200,
+      "y_end": 200,
+      "fit": "NONE",
+      "layout": "CENTER",
       "styles": {
         "transparent": "yes",
         "spacing": {
@@ -133,7 +149,7 @@
       "src": "digital_clock",
       "refresh_interval_multiplier": 2,
       "container": {
-        "inside": "D",
+        "inside": "E",
         "x_start": 10,
         "y_start": 70,
         "x_end": 230,
@@ -145,10 +161,10 @@
         "transparent": "yes",
         "text": {
           "size": 46,
-          "color": "0000ff"
+          "color": "ffffff"
         },
         "background": {
-          "color": "00fffa"
+          "color": "000000"
         }
       },
       "options": {
@@ -156,80 +172,23 @@
         "include_hr": "yes",
         "include_min": "yes",
         "include_sec": "no",
-        "include_ampm": "yes"
+        "include_ampm": "no"
       }
     },
-    {
-      "name": "wifi",
-      "type": "LvWifi",
-      "src": "wifi",
-      "refresh_interval_multiplier": 60,
-      "container": {
-        "inside": "B",
-        "x_start": 20,
-        "y_start": 35,
-        "x_end": 130,
-        "y_end": 60,
-        "fit": "NONE",
-        "layout": "CENTER"
-      },
-      "styles": {
-        "transparent": "yes",
-        "text": {
-          "size": 12,
-          "color": "0000ff"
-        },
-        "background": {
-          "color": "00fffa"
-        }
-      },
-      "options": {
-        "format": "12h",
-        "include_ssid": "yes"
-      }
-    },
-    {
-      "name": "power",
-      "type": "LvPower",
-      "src": "power",
-      "refresh_interval_multiplier": 60,
-      "container": {
-        "inside": "A",
-        "x_start": 35,
-        "y_start": 7,
-        "x_end": 130,
-        "y_end": 32,
-        "fit": "NONE",
-        "layout": "CENTER"
-      },
-      "styles": {
-        "transparent": "yes",
-        "text": {
-          "size": 12,
-          "color": "0000ff"
-        },
-        "background": {
-          "color": "00fffa"
-        }
-      },
-      "options": {
-        "format": "12h",
-        "include_battery_percentage": "yes",
-        "include_battery_voltage": "yes"
-      }
-    },
+
+
     {
       "name": "settings",
       "type": "LvSymbolButton",
       "src": "none",
       "refresh_interval_multiplier": 0,
       "container": {
-        "inside": "C"
+        "inside": "H"
       },
       "styles": {
         "transparent": "yes",
         "text": {
-          "size": 30,
+          "size": 24,
           "color": "ffffff"
         },
         "background": {
@@ -248,6 +207,7 @@
         "symbol_text_separator": ""
       }
     },
+
     {
       "name": "step_counter",
       "type": "LvSymbolLabel",
@@ -265,8 +225,8 @@
       "styles": {
         "transparent": "no",
         "text": {
-          "size": 16,
-          "color": "0000ff"
+          "size": 14,
+          "color": "ffffff"
         },
         "background": {
           "color": "00fffa"
@@ -289,13 +249,14 @@
             },
             "symbol": {
               "val": "IMAGE",
-              "color": "808080"
+              "color": "ffffff"
             },
             "text": {
               "src_val": "current_count",
               "default_val": 0,
+              "fixed_num_chars": 5,
               "units": "",
-              "color": "808080",
+              "color": "ffffff",
               "cast": "int"
             },
             "symbol_text_seperator": "\n"
@@ -313,13 +274,14 @@
             },
             "symbol": {
               "val": "IMAGE",
-              "color": "ff0000"
+              "color": "ffffff"
             },
             "text": {
               "src_val": "current_count",
               "default_val": 0,
+              "fixed_num_chars": 5,
               "units": "",
-              "color": "ff0000",
+              "color": "ffffff",
               "cast": "int"
             },
             "symbol_text_seperator": "\n"

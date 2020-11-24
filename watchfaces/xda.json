@@ -1,8 +1,8 @@
 {
-  "name": "watchface_default",
+  "name": "xda",
   "wallpaper": {
     "type" : "png",
-    "filename" : "/watchfaces/watchface_default.png"
+    "filename" : "/watchfaces/xda.png"
   },
   "refresh": {
     "interval_msec": 500

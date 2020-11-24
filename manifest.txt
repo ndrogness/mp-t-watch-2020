@@ -1,0 +1,12 @@
+fonts/font_ds_digital_20.bin,fonts/font_ds_digital_20.bin
+watchfaces/rr051.json,watchfaces/rr051.json
+watchfaces/rr051.png,watchfaces/rr051.png
+watchfaces/rr053.json,watchfaces/rr053.json
+watchfaces/rr053.png,watchfaces/rr053.png
+boot.py,boot.py
+config.json,config.json
+lv_watchface.py,lv_watchface.py
+styles.py,styles.py
+main.py,main.py
+bma423_mp.py,bma423_mp.py
+urequests.py,urequests.py
