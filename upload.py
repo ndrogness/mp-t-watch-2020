@@ -1,10 +1,18 @@
 import os
 import time
 import serial
+import sys
 
-PORT = '/dev/ttyUSB0'
+WIN_PORT = 'COM6'
+LINUX_PORT = '/dev/ttyUSB0'
 BAUD = 115200
-CONNECT_WITH_AFTER_XFER = 'miniterm.py /dev/ttyUSB0 115200'
+
+if sys.platform == 'win32':
+    PORT = WIN_PORT
+else:
+    PORT = LINUX_PORT
+
+CONNECT_WITH_AFTER_XFER = 'python -m serial.tools.miniterm {} {}'.format(PORT, BAUD)
 
 if not os.path.exists('manifest.txt'):
     print('Missing manifest.txt file, no files to upload')
